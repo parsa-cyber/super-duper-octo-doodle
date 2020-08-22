@@ -1,0 +1,79 @@
+<!DOCTTYPE html>
+<html>
+
+<link rel = "slidesheet" href = "Parsa.css"
+
+<head>
+	<script>
+	function changeCar(CarName)
+	{
+	 document.getElementById('CarName').innerHTML = CarName;
+	 document.getElementById('CarImage').src = CarName + '.jpg';
+
+
+	 document.getElementById('MercedesDescription').style.display = 'none';
+	 document.getElementById('BMWDescription').style.display = 'none';
+	 document.getElementById('ToyotaDescription').style.display = 'none';
+	 document.getElementById('FordDescription').style.display = 'none';
+	 
+	 document.getElementById(CarName + 'Description').style.display = 'block';
+	}
+	</script>
+</head>
+
+<body>
+	<header>
+		Hello Parsa
+	</header>
+	
+	<section>
+		<nav>
+			<ul>
+			<li onclick = "changeCar('Mercedes')">Mercedes</li>
+			<li onclick = "changeCar('BMW')">BMW</li>
+			<li onclick = "changeCar('Ford')">Ford</li>
+			<li onclick = "changeCar('Toyota')">Toyota</li>
+<!-- 			
+				<li> <a href = "https://www.mbusa.com/en/home"> Mercedes </a></li>
+				<li> <a href = "https://www.bmw.com/en/index.html"> BMW </a></li>
+				<li> <a href = "https://www.toyota.com/?srchid=sea:Brand_Toyota_SET_US:GOOGLE:Brand_EXACT::&gclsrc=aw.ds&&gclid=EAIaIQobChMIiMnkmJDS6AIViI7ICh0NlADvEAAYASAAEgJWkPD_BwE&gclsrc=aw.ds"> Toyota </a></li>
+				<li> <a href = "https://www.ford.com/"> Ford </a></li> 
+-->
+			</ul>
+		</nav>
+		<article>
+			<h1 id = "CarName">Mercedes</h1>
+			
+			<p id = "MercedesDescription">
+			Mercedes-Benz is a German global automobile marque and a division of Daimler AG. 
+			Mercedes-Benz is known for luxury vehicles, vans, trucks, buses, coaches and ambulances. 
+			The headquarters is in Stuttgart, Baden-Württemberg. The name first appeared in 1926 under Daimler-Benz.
+			</p>
+			
+			<p id = "BMWDescription" style = "display : none">
+			Bayerische Motoren Werke AG, translated in English as Bavarian Motor Works, commonly referred to as BMW, 
+			is a German multinational company which produces luxury vehicles and motorcycles.
+			</p>
+			
+			<p id = "ToyotaDescription" style = "display : none">
+			Toyota Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Toyota, Aichi, Japan. In 2017, Toyota's corporate structure consisted of 
+			364,445 employees worldwide and, as of December 2019, was the tenth-largest company in the world by revenue.
+			</p>
+			
+			<p id = "FordDescription" style = "display : none">
+			Ford Motor Company, commonly known as Ford, is an American multinational automaker that has its main headquarters
+			in Dearborn, Michigan, a suburb of Detroit. It was founded by Henry Ford and incorporated on June 16, 1903.
+			</p>
+			
+			<img id ="CarImage" src = "mercedes.jpg" width = 300 height = 200></img>
+		</article>
+	</section>
+	
+	<footer>
+		<section>
+			<button> Click me </button>
+			<p> Click this button </p>
+		</section>
+	</footer>
+</body>
+</html>

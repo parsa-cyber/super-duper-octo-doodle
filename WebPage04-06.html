@@ -1,0 +1,69 @@
+<!DOCTTYPE html>
+<html>
+
+<link rel = "stylesheet" href = "Parsa.css"> </link>
+
+<head>
+	<script>
+	function changeFlag(FlagName)
+	{
+	 document.getElementById('FlagName').innerHTML = FlagName;
+	 document.getElementById('FlagImage').src = 'Flags\\' + FlagName + '.jpg';
+
+
+	 document.getElementById('FranceDescription').style.display = 'none';
+	 document.getElementById('EnglandDescription').style.display = 'none';
+	 document.getElementById('BelgiumDescription').style.display = 'none';
+	 document.getElementById('SwedenDescription').style.display = 'none';
+	 
+	 document.getElementById(FlagName + 'Description').style.display = 'block';
+	}
+	</script>
+</head>
+
+<body>
+	<header>
+		Hello Parsa
+	</header>
+	
+	<section>
+		<nav>
+			<ul>
+			<li onclick = "changeFlag('France')">France</li>
+			<li onclick = "changeFlag('Belgium')">Belgium</li>
+			<li onclick = "changeFlag('England')">England</li>
+			<li onclick = "changeFlag('Sweden')">Sweden</li>
+
+			</ul>
+		</nav>
+		<article>
+			<h1 id = "FlagName">France</h1>
+			
+			<p id = "FranceDescription">
+			The flag of France is a tricolour flag featuring three vertical bands coloured blue, white, and red.
+			It is known to English speakers as the French Tricolour or simply the Tricolour.
+			</p>
+			
+			<p id = "BelgiumDescription" style = "display : none">
+			The national flag of the Kingdom of Belgium is a tricolour of three bands of black, yellow, and red. The colours were taken from the coat of arms of the Duchy of Brabant, and the vertical design may be based 
+			on the flag of France. When flown, the black band is nearest the pole. It has the unusual proportions of 13:15
+			</p>
+			
+			<p id = "EnglandDescription" style = "display : none">
+			England is a country that is part of the United Kingdom. It shares land borders with Wales to the west and Scotland to the north. The Irish Sea lies west of England and the Celtic Sea to the southwest. England is separated from
+			continental Europe by the North Sea to the east and the English Channel to the south
+			</p>
+			
+			<p id = "SwedenDescription" style = "display : none">
+			The flag of Sweden consists of a yellow or gold Nordic cross on a field of blue. The Nordic cross design traditionally represents Christianity.
+			</p>
+			
+			<img id ="FlagImage" src = "Flags\France.jpg" width = 200 height = 150></img>
+		</article>
+	</section>
+	
+	<footer>
+		<h1> Countries Map </h1>
+	</footer>
+</body>
+</html>
