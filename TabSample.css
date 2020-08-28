@@ -1,0 +1,32 @@
+
+.tab {
+	border: 1px solid #ccc;
+	background: #bbb;
+	overflow: hidden;
+}
+
+.tab button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 16px;
+}
+.tab button:hover{
+	background-color:lime;
+}
+
+
+.tabcontent{
+	display:none;
+	padding:6px 10px;
+	border: 1px solid #ccc;
+}
+.tabcontent:hover{
+	background-color:blue;
+	
+}
+.tabcontent img{
+	width: 300px;
+	height: 200px;
+}
